@@ -1,0 +1,57 @@
+<Byteblazar>
+
+	<!-- merged from Time Skip Patch -->
+	
+	<!-- reduce duration of Refreshed status to 8 hours for balance and to make schedules more manageable -->
+	<!-- <set xpath="/buffs/buff[@name='bb7doi_buffWakefulness']/duration/@value">1200</set> -->
+	<set xpath="/buffs/buff[@name='bb7doi_buffWakefulness']/effect_group/triggered_effect[@cvar='$bb7doiWakefulnessCounter' and @value='@$bb7doi16hoursAdjusted']/@value">@$bb7doi8hoursAdjusted</set>
+	<set xpath="/buffs/buff[@name='bb7doi_buffWakefulness']/effect_group/triggered_effect/requirement[@cvar='$bb7doiWakefulnessCounter' and @value='@$bb7doi16hoursAdjusted']/@value">@$bb7doi8hoursAdjusted</set>
+	
+	<!-- set sleep reminder + bedtime buff to trigger at 16 hours awake instead of 20 -->
+	<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group/triggered_effect[@action='AddBuff' and @buff='bb7doi_buffBedtime']/requirement[@cvar='$bb7doiTrackerCounter' and @value='@$bb7doi20hoursAdjusted']/@value">@$bb7doi16hoursAdjusted</set>
+	<set xpath="/buffs/buff[@name='bb7doi_buffBedtime']/effect_group/triggered_effect[@cvar='$bb7doiTrackerCounter' and @operation='set']/@value">@$bb7doi16hoursAdjusted</set>
+	
+	<!-- increase maximum healing from sleeping for balance, because the player is literally wasting time otherwise -->
+	<set xpath="/buffs/buff[@name='bb7doi_buffS2']/effect_group/triggered_effect[@cvar='$bb7doiDysenteryFloor' and @operation='multiply']/@value">.6</set>	
+	<!-- <set xpath="/buffs/buff[@name='bb7doi_buffS2']/triggered_effect[@cvar='$bb7doiInfectionFloor' and @operation='multiply']/@value">.7</set> -->
+	<set xpath="/buffs/buff[@name='bb7doi_buffS2']/effect_group/triggered_effect[@cvar='$bb7doiAbrasionFloor' and @operation='multiply']/@value">.6</set>
+	<set xpath="/buffs/buff[@name='bb7doi_buffS2']/effect_group/triggered_effect[@cvar='$bb7doiConcussionFloor' and @operation='multiply']/@value">.6</set>
+	<set xpath="/buffs/buff[@name='bb7doi_buffS2']/effect_group/triggered_effect[@cvar='$bb7doiLegHurtFloor' and @operation='multiply']/@value">.6</set>
+	<set xpath="/buffs/buff[@name='bb7doi_buffS2']/effect_group/triggered_effect[@cvar='$bb7doiArmHurtFloor' and @operation='multiply']/@value">.6</set>
+	<set xpath="/buffs/buff[@name='bb7doi_buffS2']/effect_group/triggered_effect[@cvar='$bb7doiLacerationFloor' and @operation='multiply']/@value">.6</set>
+	
+	<!-- increase healing rate values by 50% so sleeping does not take much longer than before when hurt -->
+	<set xpath="/buffs/buff[@name='bb7doi_buffS0']/effect_group/triggered_effect[@cvar='$bb7doiHealthModMax' and @operation='set']/@value">1.5</set>
+	<set xpath="/buffs/buff[@name='bb7doi_buffS0']/effect_group/triggered_effect[@cvar='$bb7doiHealthModStep' and @operation='set']/@value">.0255</set>
+	<set xpath="/buffs/buff[@name='bb7doi_buffS0']/effect_group/triggered_effect[@cvar='$bb7doiFatigueModMax' and @operation='set']/@value">-60</set>
+	<set xpath="/buffs/buff[@name='bb7doi_buffS0']/effect_group/triggered_effect[@cvar='$bb7doiFatigueModStep' and @operation='set']/@value">-0.9</set>
+	<!-- <set xpath="/buffs/buff[@name='bb7doi_buffS0']/effect_group/triggered_effect[@cvar='$bb7doiInfectionModMax' and @operation='set']/@value">-30</set> -->
+	<!-- <set xpath="/buffs/buff[@name='bb7doi_buffS0']/effect_group/triggered_effect[@cvar='$bb7doiInfectionModStep' and @operation='set']/@value">-0.45</set> -->
+	<set xpath="/buffs/buff[@name='bb7doi_buffS0']/effect_group/triggered_effect[@cvar='$bb7doiOtherModMax' and @operation='set']/@value">-60</set>
+	<set xpath="/buffs/buff[@name='bb7doi_buffS0']/effect_group/triggered_effect[@cvar='$bb7doiOtherModStep' and @operation='set']/@value">-0.9</set>
+
+	<set xpath="/buffs/buff[@name='bb7doi_buffS0Quality']/effect_group/triggered_effect[@cvar='$bb7doiHealthModMax' and @operation='set']/@value">2.25</set>
+	<set xpath="/buffs/buff[@name='bb7doi_buffS0Quality']/effect_group/triggered_effect[@cvar='$bb7doiHealthModStep' and @operation='set']/@value">.0375</set>
+	<set xpath="/buffs/buff[@name='bb7doi_buffS0Quality']/effect_group/triggered_effect[@cvar='$bb7doiFatigueModMax' and @operation='set']/@value">-90</set>
+	<set xpath="/buffs/buff[@name='bb7doi_buffS0Quality']/effect_group/triggered_effect[@cvar='$bb7doiFatigueModStep' and @operation='set']/@value">-1.5</set>
+	<!-- <set xpath="/buffs/buff[@name='bb7doi_buffS0Quality']/effect_group/triggered_effect[@cvar='$bb7doiInfectionModMax' and @operation='set']/@value">-45</set> -->
+	<!-- <set xpath="/buffs/buff[@name='bb7doi_buffS0Quality']/effect_group/triggered_effect[@cvar='$bb7doiInfectionModStep' and @operation='set']/@value">-0.75</set> -->
+	<set xpath="/buffs/buff[@name='bb7doi_buffS0Quality']/effect_group/triggered_effect[@cvar='$bb7doiOtherModMax' and @operation='set']/@value">-90</set>
+	<set xpath="/buffs/buff[@name='bb7doi_buffS0Quality']/effect_group/triggered_effect[@cvar='$bb7doiOtherModStep' and @operation='set']/@value">-1.5</set>
+
+	<insertBefore xpath="/buffs/buff[@name='bb7doi_buffS2']/effect_group/triggered_effect[@trigger='onSelfBuffStart' and @cvar='$bb7doiMinSleep' and @operation='set']">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$bb7doiMinutesSlept" operation="set" value="0"/>
+	</insertBefore>
+	<append xpath="/buffs/buff[@name='bb7doi_buffS2']">
+		<effect_group name="TimeSkip">
+			<requirement name="CVarCompare" cvar="$bb7doiMinutesSlept" operation="LT" value="720"/>
+			<!-- 1 second = +12 minutes (caps at 12 hours) -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$bb7doiMinutesSlept" operation="add" value="12"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="bb7doi_SleepSkip"/>
+		</effect_group>
+	</append>
+	
+	<!-- Reminder at 16 hours awake instead of 20 -->
+	<set xpath="//buff[@name='bb7doi_buffBedtime']/@tooltip_key">BedtimeTooltip16</set>
+	
+</Byteblazar>

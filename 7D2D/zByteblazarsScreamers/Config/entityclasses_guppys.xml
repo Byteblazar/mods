@@ -1,0 +1,13 @@
+<Byteblazar>
+
+	<append xpath="//entity_class[@name='zombieGuppyLucy']">
+		<property name="AIFeralSense" value="3"/>
+		<property name="AINoiseSeekDist" value="16"/>
+		<property name="SoundRandom" value=""/>
+		<property name="SoundAttack" value=""/>
+		<property name="SoundSense" value=""/>
+		<property name="LookAtAngle" value="0"/>
+		<property name="WalkType" value="22"/>
+	</append>
+
+</Byteblazar>

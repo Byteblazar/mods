@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <!-- v2.0 -->
+	<Name value="Byteblazars_No_Enemy_Indicators" />
+	<DisplayName value="Byteblazar's No Enemy Indicators" />
+	<Version value="1.0.0.0" />
+	<Description value="Hides red indicators normally shown in the compass during 'clear' quests (yellow indicators remain)." />
+	<Author value="Byteblazar" />
+	<Website value=""/>
+</xml>

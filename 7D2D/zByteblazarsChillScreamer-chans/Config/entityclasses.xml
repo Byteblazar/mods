@@ -1,0 +1,26 @@
+<Byteblazar>
+
+<remove xpath="/entity_classes/entity_class[@name='zombieScreamer']/property[@name='SoundAlert']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieScreamer']/property[@name='SoundSense']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieScreamer']/property[@name='AITask']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieScreamer']/property[@name='AITarget']"/>
+<append xpath="/entity_classes/entity_class[@name='zombieScreamer']">
+	<property name="SizeScale" value="0.8"/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="AITask" value="
+	RunawayWhenHurt|
+	ApproachDistraction|
+	ApproachSpot|
+	Look|
+	Wander|
+
+	"/>
+	<property name="AITarget" value="
+	SetAsTargetIfHurt class=EntityPlayer,EntityBandit,EntityEnemyAnimal|
+	SetNearestCorpseAsTarget flags=edible|
+	SetNearestEntityAsTarget class=EntityPlayer,0,0,EntityBandit,0,-10|
+	"/>
+</append>
+
+</Byteblazar>

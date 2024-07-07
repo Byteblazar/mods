@@ -1,0 +1,12 @@
+<Byteblazar>
+
+	<!-- remove this whole conditional if you don't want the time-skipping mechanics at all -->
+	<conditional>
+		<if cond="!gamepref('ServerEnabled') || !(serverinfo('MaxPlayers') >= 13)">
+			<include filename="timeskipping_buffs.xml" />
+		</if>
+	</conditional>
+	
+	<include filename="timescale.xml" />
+	
+</Byteblazar>

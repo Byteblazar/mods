@@ -1,0 +1,6 @@
+<Byteblazar>
+
+	<csv xpath="//entitygroup[@name='ZombieScouts']/text()" op="add" delim=",">zombieScreamerFeral</csv>
+	<csv xpath="//entitygroup[@name='ZombieScouts']/text()" op="remove" delim=",">zombieScreamer</csv>
+
+</Byteblazar>

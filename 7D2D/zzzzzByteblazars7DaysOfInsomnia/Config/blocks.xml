@@ -1,0 +1,28 @@
+<Byteblazar>
+	
+	<prepend xpath="/blocks/block[@name='bed02' or @name='bunkBedMade' or @name='gurneyBed' or @name='hospitalBed' or starts-with(@name,'mattress')]" >
+		<property name="BuffsWhenWalkedOn" value="bb7doi_buffS0"/>
+	</prepend>
+
+	<prepend xpath="/blocks/block[starts-with(@name,'couch') and not(contains(@name,'arm')) and not(contains(@name, 'Arm'))]" >
+		<property name="BuffsWhenWalkedOn" value="bb7doi_buffS0"/>
+	</prepend>
+	
+	<prepend xpath="/blocks/block[contains(@name,'Sofa')]">
+		<property name="BuffsWhenWalkedOn" value="bb7doi_buffS0"/>
+	</prepend>
+	
+	<prepend xpath="/blocks/block[starts-with(@name,'bedroll')]">
+		<property name="BuffsWhenWalkedOn" value="bb7doi_buffS0"/>
+	</prepend>
+	
+	<prepend xpath="/blocks/block/property[@name='Class' and @value='SleepingBag']/..">
+		<property name="BuffsWhenWalkedOn" value="bb7doi_buffS0"/>
+	</prepend>
+
+	<append xpath="/blocks/block[@name='bed02' or @name='ZT_BedQueenSize' or @name='ZT_BedFullSize']/property[@name='BuffsWhenWalkedOn']/@value">;bb7doi_buffS0Quality</append>
+	<append xpath="/blocks/block[starts-with(@name,'bedroll') or @name='bunkBedMade' or @name='gurneyBed' or @name='hospitalBed' or @name='ZT_GardenBed' or starts-with(@name,'mattress')]/property[@name='BuffsWhenWalkedOn']/@value">;bb7doi_buffS0</append>
+	<append xpath="/blocks/block[starts-with(@name,'couch') and not(contains(@name,'arm')) and not(contains(@name,'Arm'))]/property[@name='BuffsWhenWalkedOn']/@value">;bb7doi_buffS0</append>
+	<append xpath="/blocks/block[contains(@name,'Sofa')]/property[@name='BuffsWhenWalkedOn']/@value">;bb7doi_buffS0</append>
+	
+</Byteblazar>

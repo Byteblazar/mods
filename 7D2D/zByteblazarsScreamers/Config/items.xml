@@ -1,0 +1,30 @@
+<Byteblazar>
+
+	<append xpath="/items">
+		<item name="bbScreamerHand">
+			<property name="Extends" value="meleeHandZombieFeral"/>
+			<property class="Action0">
+				<property name="DamageEntity" value="20"/>
+				<property name="DamageBlock" value="24"/>
+				<property name="Range" value="1.6"/>
+			</property>
+			<effect_group name="bbSlap" tiered="false">
+				<triggered_effect trigger="onSelfAttackedOther" action="CallGameEvent" target="other" event="bbscreamers_slap"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="ShakeCamera" target="other" shake_speed="8" shake_amplitude="240" shake_time=".3"/>
+			</effect_group>
+		</item>
+		<item name="bbScreamerHandCrawler">
+			<property name="Extends" value="meleeHandZombie02Feral"/>
+			<property class="Action0">
+				<property name="DamageEntity" value="20"/>
+				<property name="DamageBlock" value="24"/>
+				<property name="Range" value="1.6"/>
+			</property>
+			<effect_group name="bbSlap" tiered="false">
+				<triggered_effect trigger="onSelfAttackedOther" action="CallGameEvent" target="other" event="bbscreamers_slap"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="ShakeCamera" target="other" shake_speed="8" shake_amplitude="240" shake_time=".3"/>
+			</effect_group>
+		</item>
+	</append>
+
+</Byteblazar>

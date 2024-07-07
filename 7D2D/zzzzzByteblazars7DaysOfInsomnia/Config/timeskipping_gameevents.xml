@@ -1,0 +1,39 @@
+<Byteblazar>
+
+	<append xpath="gameevents">
+		<action_sequence name="bb7doi_SleepSkip">
+			<property name="action_type" value="Game" />
+			
+			<action class="TimeChange">
+				<property name="time_preset" value="Current" />
+				<property name="time" value="12" />
+			</action>
+			
+		</action_sequence>
+	</append>
+	<conditional>
+		<if cond="gamepref('ServerEnabled')">
+			<conditional>
+				<if cond="serverinfo('MaxPlayers') >= 13">
+					<set xpath="//action_sequence[@name='bb7doi_SleepSkip']/action[@class='TimeChange']/property[@name='time']/@value">0</set>
+				</if>
+				<if cond="serverinfo('MaxPlayers') >= 7">
+					<set xpath="//action_sequence[@name='bb7doi_SleepSkip']/action[@class='TimeChange']/property[@name='time']/@value">1</set>
+				</if>
+				<if cond="serverinfo('MaxPlayers') >= 5">
+					<set xpath="//action_sequence[@name='bb7doi_SleepSkip']/action[@class='TimeChange']/property[@name='time']/@value">2</set>
+				</if>
+				<if cond="serverinfo('MaxPlayers') == 4">
+					<set xpath="//action_sequence[@name='bb7doi_SleepSkip']/action[@class='TimeChange']/property[@name='time']/@value">3</set>
+				</if>
+				<if cond="serverinfo('MaxPlayers') == 3">
+					<set xpath="//action_sequence[@name='bb7doi_SleepSkip']/action[@class='TimeChange']/property[@name='time']/@value">4</set>
+				</if>
+				<if cond="serverinfo('MaxPlayers') == 2">
+					<set xpath="//action_sequence[@name='bb7doi_SleepSkip']/action[@class='TimeChange']/property[@name='time']/@value">6</set>
+				</if>
+			</conditional>
+		</if>
+	</conditional>
+	
+</Byteblazar>

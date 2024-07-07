@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="Byteblazar_7_Days_Of_Insomnia_Overrides" />
+	<DisplayName value="Byteblazar's 7 Days of Insomnia - Overrides" />
+	<Description value="Applies conditional patches and patches bed blocks." />
+	<Author value="Byteblazar" />
+	<Version value="1.5.0.0" />
+	<Website value="https://ko-fi.com/byteblazar" />
+</xml>

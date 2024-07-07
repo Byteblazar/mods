@@ -1,0 +1,4 @@
+<Byteblazar>
+	<remove xpath="/buffs/buff[@name='bb7doi_buffS2']/effect_group/triggered_effect[@cvar='.bb7doiSandmanChance' and @operation='set']"/>
+	<remove xpath="/buffs/buff[@name='bb7doi_buffS2']/effect_group/triggered_effect[@cvar='.bb7doiSnoreCount' and @operation='set']"/>
+</Byteblazar>

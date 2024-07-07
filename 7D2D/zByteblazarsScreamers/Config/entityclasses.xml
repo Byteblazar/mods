@@ -1,0 +1,57 @@
+<Byteblazar>
+
+	<conditional>
+		<if cond="mod_loaded('PathSmoothing')">
+			<include filename="entityclasses_path_smoothing.xml" />
+		</if>
+		<else>
+			<append xpath="/entity_classes/entity_class[@name='zombieScreamerFeral' or @name='zombieScreamerRadiated']">
+				<property name="AIFeralSense" value="3"/>
+				<property name="AINoiseSeekDist" value="16"/>
+				<property name="SoundRandom" value=""/>
+				<property name="SoundAttack" value=""/>
+				<property name="SoundSense" value=""/>
+				<property name="LookAtAngle" value="0"/>
+				<property name="WalkType" value="22"/>	
+				<property name="AIPathCostScale" value=".8,1.2"/>
+				
+				<property name="AITask" value=""/>
+				<property name="AITarget" value=""/>
+				<property name="AITask-1" value="RunawayFromEntity" data="class=EntityPlayer,EntityEnemyAnimal;safeDistance=30"/> 
+				<property name="AITask-2" value="Leap"/>
+				<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityPlayer,3600,EntityBandit,3600"/>
+				<property name="AITask-4" value="ApproachSpot"/>
+				<property name="AITask-5" value="Look"/>
+				<property name="AITask-6" value="Wander"/>
+
+				<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+				<property name="AITarget-2" value="SetNearestCorpseAsTarget" data="flags=edible"/>
+				<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,200,200"/>
+				<property name="AITarget-4" value="BlockIf" data="condition=alert e 1"/>
+				<property name="AITarget-5" value="BlockingTargetTask"/>
+				<property name="AITarget-6" value="SetNearestEntityAsTarget" data="class=EntityZombie,200,200"/>
+				
+				<property name="MaxTurnSpeed" value="500"/>
+				<property name="MoveSpeed" value="0.2"/> <!-- Just shambling around -->
+				<property name="MoveSpeedAggro" value="36, 36"/> <!-- Chasing a target min/max (like day or night) -->
+				<property name="MoveSpeedRand" value="0, .25"/> <!-- Rand added to min aggro speed -->
+				<property name="MoveSpeedPanic" value="36"/>	
+				<property name="CanClimbVertical" value="true"/>
+				<property name="JumpMaxDistance" value="18, 18"/>
+				<property name="SightRange" value="100"/> <!-- distance in m -->
+				<property name="HandItem" value="bbScreamerHand"/>
+				<property name="HandItemCrawler" value="bbScreamerHandCrawler"/>
+				<effect_group name="bb Fast Hands">
+					<passive_effect name="AttacksPerMinute" operation="perc_add" value="1"/>
+				</effect_group>
+			</append>
+		</else>
+	</conditional>
+	
+	<conditional>
+		<if cond="xpath('//entity_class[@name=&quot;zombieGuppyLucy&quot;]') != null">
+			<include filename="entityclasses_guppys.xml" />
+		</if>
+	</conditional>
+
+</Byteblazar>

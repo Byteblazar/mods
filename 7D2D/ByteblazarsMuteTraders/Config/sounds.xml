@@ -1,0 +1,6 @@
+<Byteblazar>
+	<remove xpath="//AudioClip[starts-with(@ClipName,'Sounds/VO/Trader/')]"/>
+	<insertAfter xpath="//AudioSource[starts-with(@name,'Sounds/AudioSource_VO_Trader')]">
+		<AudioClip ClipName=""/>
+	</insertAfter>
+</Byteblazar>

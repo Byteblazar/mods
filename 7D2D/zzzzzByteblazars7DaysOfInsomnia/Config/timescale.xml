@@ -1,0 +1,102 @@
+<Byteblazar>
+
+	<conditional>
+		<if cond="serverinfo('DayNightLength') >= 1440">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">1440</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 1380">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">1380</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 1320">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">1320</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 1260">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">1260</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 1200">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">1200</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 1140">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">1140</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 1080">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">1080</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 1020">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">1020</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 960">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">960</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 900">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">900</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 840">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">840</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 780">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">780</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 720">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">720</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 660">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">660</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 600">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">600</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 540">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">540</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 480">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">480</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 420">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">420</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 360">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">360</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 300">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">300</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 240">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">240</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 180">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">180</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 150">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">150</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 120">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">120</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 90">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">90</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 75">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">75</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 60">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">60</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 50">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">50</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 40">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">40</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 30">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">30</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 20">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">20</set>
+		</if>
+		<if cond="serverinfo('DayNightLength') >= 10">
+			<set xpath="/buffs/buff[@name='bb7doi_buffTracker']/effect_group[@name='startup']/triggered_effect[@cvar='.bb7doiTS' and @operation='set']/@value">10</set>
+		</if>
+	</conditional>
+	
+</Byteblazar>

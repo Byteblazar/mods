@@ -1,0 +1,14 @@
+<Byteblazar>
+
+	<append xpath="/gameevents">
+		<action_sequence name="bbscreamers_slap">
+			<property name="action_type" value="Game" />
+			
+			<action class="RandomizeRotation">
+				<property name="phase" value="0" />
+			</action>
+
+		</action_sequence>
+	</append>
+	
+</Byteblazar>

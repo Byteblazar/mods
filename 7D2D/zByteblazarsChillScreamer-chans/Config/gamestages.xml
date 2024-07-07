@@ -1,0 +1,10 @@
+<Byteblazar>
+<remove xpath="/gamestages/spawner[@name='ScoutGSList']"/>
+<append xpath="/gamestages">
+	<spawner name="ScoutGSList">
+		<gamestage stage="999">
+			<spawn group="scoutHordeStageGS1" num="0" maxAlive="0" duration="1"/>
+		</gamestage>
+	</spawner>
+</append>
+</Byteblazar>
