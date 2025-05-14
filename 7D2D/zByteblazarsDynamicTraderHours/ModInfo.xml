@@ -2,7 +2,7 @@
 <xml>
 	<Name value="Byteblazar_Dynamic_Trader_Hours" />
 	<DisplayName value="Byteblazar's Dynamic Trader Hours" />
-	<Description value="Adjusts trader hours based on the chosen 24-hour cycle (DayLightLength)." />
+	<Description value="Adjusts trader hours based on the chosen Daylight Length." />
 	<Author value="Byteblazar" />
 	<Version value="1.0.0.1" />
 	<Website value="https://ko-fi.com/byteblazar" />
