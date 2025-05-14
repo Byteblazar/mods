@@ -1,0 +1,141 @@
+<Byteblazar>
+
+	<conditional>
+		<if cond="mod_loaded('Byteblazars_Daylight_Fix')">
+			<conditional>
+				<if cond="serverinfo('DayLightLength') >= 18">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">3:05</set>
+					<set xpath="//trader_info[@close_time='21:50']/@close_time">20:50</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 17">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">3:35</set>
+					<set xpath="//trader_info[@close_time='21:50']/@close_time">20:20</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 16">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">4:05</set>
+					<set xpath="//trader_info[@close_time='21:50']/@close_time">19:50</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 15">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">4:35</set>
+					<set xpath="//trader_info[@close_time='21:50']/@close_time">19:20</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 14">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">5:05</set>
+					<set xpath="//trader_info[@close_time='21:50']/@close_time">18:50</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 13">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">5:35</set>
+					<set xpath="//trader_info[@close_time='21:50']/@close_time">18:20</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 12">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">6:05</set>
+					<set xpath="//trader_info[@close_time='21:50']/@close_time">17:50</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 11">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">6:35</set>
+					<set xpath="//trader_info[@close_time='21:50']/@close_time">17:20</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 10">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">7:05</set>
+					<set xpath="//trader_info[@close_time='21:50']/@close_time">16:50</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 9">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">7:35</set>
+					<set xpath="//trader_info[@close_time='21:50']/@close_time">16:20</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 8">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">8:05</set>
+					<set xpath="//trader_info[@close_time='21:50']/@close_time">15:50</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 7">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">8:35</set>
+					<set xpath="//trader_info[@close_time='21:50']/@close_time">15:20</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 6">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">9:05</set>
+					<set xpath="//trader_info[@close_time='21:50']/@close_time">14:50</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 5">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">9:35</set>
+					<set xpath="//trader_info[@close_time='21:50']/@close_time">14:20</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 4">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">10:05</set>
+					<set xpath="//trader_info[@close_time='21:50']/@close_time">13:50</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 3">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">10:35</set>
+					<set xpath="//trader_info[@close_time='21:50']/@close_time">13:20</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 2">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">11:05</set>
+					<set xpath="//trader_info[@close_time='21:50']/@close_time">12:50</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 1">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">11:35</set>
+					<set xpath="//trader_info[@close_time='21:50']/@close_time">12:20</set>
+				</if>
+			</conditional>
+		</if>
+		<else>
+			<conditional>
+				<if cond="serverinfo('DayLightLength') >= 18">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">4:05</set>
+					<set xpath="//trader_info[@close_time='21:50']/@close_time">21:50</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 17">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">5:05</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 16">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">6:05</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 15">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">7:05</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 14">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">8:05</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 13">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">9:05</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 12">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">10:05</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 11">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">11:05</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 10">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">12:05</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 9">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">13:05</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 8">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">14:05</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 7">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">15:05</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 6">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">16:05</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 5">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">17:05</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 4">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">18:05</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 3">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">19:05</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 2">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">20:05</set>
+				</if>
+				<if cond="serverinfo('DayLightLength') >= 1">
+					<set xpath="//trader_info[@open_time='4:05']/@open_time">21:05</set>
+				</if>
+			</conditional>
+		</else>
+	</conditional>
+	
+</Byteblazar>
