@@ -1,6 +1,8 @@
 <Byteblazar>
 
-	<csv xpath="//entitygroup[@name='ZombieScouts']/text()" op="add" delim=",">zombieScreamerFeral</csv>
-	<csv xpath="//entitygroup[@name='ZombieScouts']/text()" op="remove" delim=",">zombieScreamer</csv>
+	<csv xpath="//entitygroup[@name='ZombieScouts' or @name='zombieScreamer']/text()" op="add" delim="\n">zombieScreamerFeral</csv>
+	<csv xpath="//entitygroup[contains(text(),'zombieScreamer,') and not (contains(text(),'zombieScreamerFeral'))]/text()" op="add" delim="\n">zombieScreamerFeral, .5</csv>
+	<csv xpath="//entitygroup/text()" op="remove" delim="\n">zombieScreamer,*</csv>
+	<csv xpath="//entitygroup/text()" op="remove" delim="\n">zombieScreamer</csv>
 
 </Byteblazar>
